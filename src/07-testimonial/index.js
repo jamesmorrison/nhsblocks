@@ -2,7 +2,7 @@
  *  NHS Testimonial / Quote Element
  *  @reference: https://nhsuk.github.io/nhsuk-frontend/components/inset-text/index.html
  *  @author Tony Blacker, NHS Leadership Academy
- *  @version 1.0 22nd July 2019
+ *  @version 1.1 20th May 2020
  */
 
 const { __ } = wp.i18n;
@@ -12,7 +12,10 @@ const { RichText } = wp.blockEditor;
 //console.info(wp.components);
 
 registerBlockType("nhsblocks/quote1", {
-  title: __("Simple Quote", "nhsblocks"),
+  title: __("Inset Text", "nhsblocks"),
+  description: __("Use the inset text component to differentiate a block of text from the content that surrounds it," +
+      " for example quotes, examples or additional information. Use this sparingly as it is not as prominent as a" +
+      " card or panel. You can select different styles below.", "nhsblocks"),
   category: "nhsblocks",
   icon: "format-quote",
   styles: [
@@ -24,12 +27,28 @@ registerBlockType("nhsblocks/quote1", {
     {
       name: "quote-reverse",
       label: __("Inverse")
-    }
+    },
+      {
+          name: "quote-warning",
+          label: __("Subtle Warning")
+      },
+      {
+          name: "quote-alert",
+          label: __("Subtle Alert / Error")
+      },
+      {
+          name: "quote-warning-reverse",
+          label: __("Overt Warning")
+      },
+      {
+          name: "quote-alert-reverse",
+          label: __("Overt Alert / Error")
+      }
   ],
     example: {
       attributes: {
-          quoteName: 'Tony Blacker',
           quoteText: 'Nightingale is an incredibly flexible theme. With NHSBlocks added in, it is amazing.',
+          quoteName: 'Tony Blacker',
       },
     },
   attributes: {

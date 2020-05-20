@@ -13,6 +13,9 @@ const { RichText } = wp.blockEditor;
 
 registerBlockType("nhsblocks/card1", {
   title: __("Card Region", "nhsblocks"),
+	description: __("Please select a display type of card below. Be aware that if you choose urgent, immediate or warning" +
+		" style, screen readers will alert users that the information is for urgent action, immediate attention or a" +
+		" warning accordingly", "nhsblocks"),
   category: "nhsblocks",
   icon: "category",
 
