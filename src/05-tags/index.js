@@ -21,7 +21,7 @@ registerBlockType("nhsblocks/tags", {
     " the names of your tags. Using a verb might make a user think that clicking on them will do something",
    "nhsblocks"),
   category: "nhsblocks",
-  icon: "admin-links",
+  icon: "tag",
   styles: [
     {
       name: "blue",
@@ -74,7 +74,7 @@ registerBlockType("nhsblocks/tags", {
   },
   example: {
       attributes: {
-          tagLabel: 'New'
+          tagLabel: 'This is a tag'
       }
   },
   attributes: {
@@ -110,7 +110,7 @@ registerBlockType("nhsblocks/tags", {
             <RichText
               value={tagLabel}
               onChange={onChangetagLabel}
-              placeholder='Tag label'
+              placeholder='Add your tag in here'
             />
         </strong>
   ]);

@@ -14,7 +14,7 @@ import "./05-tags";
 import "./06-promo";
 import "./06a-promo-group";
 import "./07-testimonial";
-import "./08-card";
+import "./08-care-card";
 import "./09-row-group";
 import "./10-hero-block";
 import "./11-section-stripes";
@@ -24,4 +24,4 @@ import "./13-review-date";
 import "./14-filters";
 import "./15-pagination";
 import "./16-action-back-link/action-link"
-import "./16-action-back-link/back-link"
+import "./17-card"

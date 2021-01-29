@@ -18,7 +18,7 @@ const TEMPLATE_OPTIONS = [
 
 
 registerBlockType("nhsblocks/card1", {
-  title: __("Card Region", "nhsblocks"),
+  title: __("Care Card Region", "nhsblocks"),
   category: "nhsblocks",
   icon: "category",
 
